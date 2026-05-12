@@ -1,9 +1,6 @@
 
 
 
-from typing import Self
-
-
 while True:
     try:
         age = int(input("please enter your age: "))
