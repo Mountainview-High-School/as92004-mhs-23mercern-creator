@@ -11,23 +11,89 @@ else:
     exit((print ("you should try the cybrsmart youth quiz instead due to your age")))
 
 
-
-    name = input("what is your name? ")
-    print("hello, " + name + "! welcome to the quiz.")
-
+name = input("what is your name? ")
+print("hello, " + name + " welcome to the quiz.")
 
 
 
-while true:
+
+
+
+
+guess = 0
+wrong_guess = 0 
+
+
+while True:
     print("someone sends you a text that is hurtful and makes you feel bad about yourself. what should you do?")
     print("A) Delete the message and try to forget about it")
     print("B) Keep the text and show an adult you trust")
     print("C) Text the person back saying something mean to them")
 
-    choice = input("what on is the right response? (A/B/C): ").strip().upper()
+    choice = input("what one is the right response? (A/B/C): ").strip().upper()
 
     if choice == "B":
-        print(f:"correct showing an adult you trust is the best way to deal with it")
+        print(f"correct " +name+ ". showing an adult you trust is the best way to deal with it")
+        guess += 1
         break
     else: 
         print ("incorrect,")
+        wrong_guess += 1 
+
+
+if wrong_guess >= 1:
+    guess -= 1
+    wrong_guess = 0
+
+if guess == -1:
+    guess = 0
+
+
+while True:
+    print("you want to join an online gaming site. which if the following unfirmation is okay for you to post on the site.")
+    print("A) A nickname")
+    print("B) your name")
+    print("C) your email address")
+
+    choice = input("what one should you post? (A/B/C): ").strip().upper()
+    if choice == "A":
+        print(f"correct " +name+ ". using a nickname is the safest option when joining an online gaming site")
+        guess += 1
+        break
+    else:
+        print ("incorrect")
+        wrong_guess += 1
+
+
+
+if wrong_guess >= 1:
+    guess -= 1
+    wrong_guess = 0
+
+if guess == -1:
+    guess = 0
+
+
+while True:
+    print("you find out that someone has posted an embarrassing picture of you online What should you do?")
+    print("A) tweet that they are an idiot and a loser")
+    print("B) ask your friends to give the person a hard time")
+    print("C) tell and adult you trust")
+
+    choice = input("what would you do in this situation (A/B/C):").strip().upper()
+    if choice == "C":
+        print(f"correct " +name+ ". telling an adult you trust is the best way to handle this situation")
+        guess += 1
+        break
+    else:
+        print ("incorrect")
+        wrong_guess += 1
+
+if wrong_guess >= 1:
+    guess -= 1
+    wrong_guess = 0
+
+if guess == -1:
+    guess = 0
+
+print(f"you got {guess} out of 3 questions correct. " +name+"!")
