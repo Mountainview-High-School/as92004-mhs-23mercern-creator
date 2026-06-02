@@ -44,7 +44,7 @@ if wrong_guess >= 1:
 if guess == -1:
     guess = 0
 
-while True:
+
     print("you want to join an online gaming site. which if the following unfirmation is okay for you to post on the site.")
     print("A) A nickname")
     print("B) your name")
@@ -75,7 +75,7 @@ if wrong_guess >= 1:
 if guess == -1:
     guess = 0
 
-while True:
+
     print("you find out that someone has posted an embarrassing picture of you online What should you do?")
     print("A) tweet that they are an idiot and a loser")
     print("B) ask your friends to give the person a hard time")
