@@ -27,12 +27,12 @@ while True:
         guess += 1
         break
     else: 
-        print ("incorrect,")
-        wrong_guess += 1 
+rong_guess += 1 
         trys += 1
     if trys >= 3:
         print ( ""+name+ " you have used all your trys for this question the correct answer was (B)")
-        break
+        break         print ("incorrect,")
+       w
 
 if trys >= 3:
     trys = 0
@@ -106,7 +106,7 @@ if wrong_guess >= 1:
 if guess == -1:
     guess = 0
 
-print(f"you got {guess} out of 3 questions correct. " +name+" good job")
+print(f"you got {guess} out of 3 questions correct." +name+" good job")
 
 
 
