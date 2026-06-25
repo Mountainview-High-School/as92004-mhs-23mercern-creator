@@ -38,8 +38,8 @@ for i in range(len(questionslist)):
   if wrong_guess >= 1:
       guess -= 1
       wrong_guess = 0
-  if guess <=0:
-    guess == 0
+  if guess == -1:
+    guess = 0
  
 
 print(f"you got {guess} out of 3 questions correct. " +name+  " good job")
